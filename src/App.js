@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import './index.css'
+import Data from './components/data';
+function App(props) {
+  const Data = (()=>{
+    console.log(Data)
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <span className='location'></span> 
+        <span className='google-map'></span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='title'>{}</h1>
+      <img src="" alt="" className='image' />
+      <p className='date'></p>
+      <p className='description'>{}</p>
+      </div>
+      <div>
+        <p>
+          <span className='location'></span> 
+        <span className='google-map'></span>
+        </p>
+      <h1 className='title'>{}</h1>
+      <img src="" alt="" className='image' />
+      <p className='date'></p>
+      <p className='description'>{}</p>
+      </div>
+      <div>
+        <p>
+          <span className='location'>{}</span> 
+        <span className='google-map'>{}</span>
+        </p>
+      <h1 className='title'>{}</h1>
+      <img src="" alt="" className='image' />
+      <p className='date'></p>
+      <p className='description'>{}</p>
+      </div>
     </div>
   );
 }
