@@ -1,41 +1,21 @@
 import './index.css'
-import Data from './components/data';
-function App(props) {
-  const Data = (()=>{
-    console.log(Data)
-  })
+import data from './components/data';
+import Main from './components/main'
+function App() {
+  const cards = data.map(item => {
+    return (
+      <Main img={item.img}
+        title={item.title}
+        date={item.date}
+        desp={item.description}
+        location={item.location}
+        map={item.googleMap}
+      />)
+
+  }) 
   return (
     <div className="App">
-      <div>
-        <p>
-          <span className='location'></span> 
-        <span className='google-map'></span>
-        </p>
-      <h1 className='title'>{}</h1>
-      <img src="" alt="" className='image' />
-      <p className='date'></p>
-      <p className='description'>{}</p>
-      </div>
-      <div>
-        <p>
-          <span className='location'></span> 
-        <span className='google-map'></span>
-        </p>
-      <h1 className='title'>{}</h1>
-      <img src="" alt="" className='image' />
-      <p className='date'></p>
-      <p className='description'>{}</p>
-      </div>
-      <div>
-        <p>
-          <span className='location'>{}</span> 
-        <span className='google-map'>{}</span>
-        </p>
-      <h1 className='title'>{}</h1>
-      <img src="" alt="" className='image' />
-      <p className='date'></p>
-      <p className='description'>{}</p>
-      </div>
+      {cards}
     </div>
   );
 }
