@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Kanit-MediumItalic';
+  src: local('Kanit-MediumItalic'), url('./fonts/Kanit/Kanit-MediumItalic.ttf') format('truetype');
+}
+
 *{
   box-sizing: border-box;
 }
@@ -60,7 +65,11 @@ body{
   width: 40%;
   border: 5px solid gainsboro;
  }
-
+.date-span{
+  font-size: 14px;
+  font-weight: 500;
+  font-family:Kanit-MediumItalic;
+}
  .map > a{
   text-decoration: underline;
   color: rgb(41, 41, 41);
