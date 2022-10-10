@@ -63,7 +63,7 @@ body{
   padding: 2px;
   margin:0 36px 36px 0;
   width: 40%;
-  border: 5px solid gainsboro;
+  /* border: 5px solid gainsboro; */
  }
 .date-span{
   font-size: 14px;
